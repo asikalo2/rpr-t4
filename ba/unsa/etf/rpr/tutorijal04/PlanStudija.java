@@ -9,4 +9,12 @@ public class PlanStudija {
 	private List<Predmet> obavezniPredmeti;
 	private List<Predmet> izborniPredmeti;
 
+	public String getIme() {
+		return ime;
+	}
+
+	public void setIme(String ime) {
+		this.ime = ime;
+	}
+
 }

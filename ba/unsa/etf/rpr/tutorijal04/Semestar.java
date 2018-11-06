@@ -21,4 +21,14 @@ public class Semestar {
 		throw new UnsupportedOperationException();
 	}
 
+	public int getBrojSemestra() {
+		return brojSemestra;
+	}
+
+	public void setBrojSemestra(int brojSemestra) {
+		this.brojSemestra = brojSemestra;
+	}
+
+
+
 }
