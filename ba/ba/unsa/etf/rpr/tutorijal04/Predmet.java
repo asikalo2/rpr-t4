@@ -6,13 +6,12 @@ public class Predmet {
 
 	private String ime;
 	private String sifra;
-	private List<Student> upisaniStudenti;
+	private List<ba.unsa.etf.rpr.tutorijal04.Student> upisaniStudenti;
 	private int maxbrstudenata=0;
 	private int brojStudenata=0;
 
 	/**
-	 * 
-	 * @param student
+	 *
 	 */
 
 
@@ -26,7 +25,7 @@ public class Predmet {
 		throw new UnsupportedOperationException();
 	}*/
 
-	public List<Student> getUpisaniStudenti() {
+	public List<ba.unsa.etf.rpr.tutorijal04.Student> getUpisaniStudenti() {
 		return upisaniStudenti;
 
 	}
@@ -38,7 +37,7 @@ public class Predmet {
 		return sifra;
 	}
 
-	public void setUpisaniStudenti(List<Student> upisaniStudenti) {
+	public void setUpisaniStudenti(List<ba.unsa.etf.rpr.tutorijal04.Student> upisaniStudenti) {
 		this.upisaniStudenti = upisaniStudenti;
 	}
 
@@ -50,9 +49,9 @@ public class Predmet {
 		this.sifra = sifra;
 	}
 
-	public void upisi(Student s){
+	public void upisi(ba.unsa.etf.rpr.tutorijal04.Student s){
 		if(brojStudenata<maxbrstudenata) {
-			upisaniStudenti.add(new Student(s));
+			upisaniStudenti.add(new ba.unsa.etf.rpr.tutorijal04.Student("Amila","Sikalo",17973));
 			System.out.println("Student je uspjesno upisan");
 		}
 		else{
@@ -64,7 +63,7 @@ public class Predmet {
 			if(brojStudenata>0) {
 				boolean ima = false;
 				for (int i = 0; i < brojStudenata; i++) {
-					if (s.sifra == s.brojIndexa) {
+					if (getSifra() == s.getBrojIndexa()) {
 						upisaniStudenti.remove();
 						ima = true;
 						break;
@@ -77,8 +76,8 @@ public class Predmet {
 			}
 			else
 				System.out.println("Predmet nema upisanih studenata");
-		}*/
-
+		}
+*/
 
 		public int getMaxbrstudenata() {
 
