@@ -1,3 +1,7 @@
+package ba.unsa.etf.rpr.tutorijal04;
+
+import java.util.List;
+
 public class Predmet {
 
 	private String ime;
