@@ -1,11 +1,20 @@
 package ba.unsa.etf.rpr.tutorijal04;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Semestar {
 
 	private int brojSemestra;
-	private List<Predmet> listaPredmeta;
+	private ArrayList<Predmet> listaPredmeta;
+
+    Semestar(int brojSemestra) {
+        this.listaPredmeta = new ArrayList<Predmet>();
+    }
+
+    public void dodajPredmet(Predmet predmet) {
+        listaPredmeta.add(predmet);
+        System.out.println("Predmet uspjesno dodan!");
+    }
 
 	public void studentiNaSemestru() {
 		// TODO - implement Semestar.studentiNaSemestru
